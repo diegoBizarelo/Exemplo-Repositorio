@@ -30,7 +30,6 @@ namespace LivroAPI
             
             services.AddDbContext<LivroContexto>(
                 options => options.UseSqlServer("Server = (localdb)\\mssqllocaldb;Database=Livros;Trusted_Connection=True;MultipleActiveResultSets=true"));
-            //services.AddScoped<LivroContexto>();
             services.AddTransient<Repositorio>();
             services.AddControllers();
         }
